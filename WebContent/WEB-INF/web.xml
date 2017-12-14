@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>SimpleServletProject</display-name>
+  <welcome-file-list>
+    <welcome-file>welcome.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>CreateHashtagServlet</servlet-name>
+    <servlet-class>controller.CreateHashtagServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchHashtagServlet</servlet-name>
+    <servlet-class>controller.SearchHashtagServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ViewHashtagServlet</servlet-name>
+    <servlet-class>controller.ViewHashtagServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateHashtagServlet</servlet-name>
+    <url-pattern>/CreateHashtagServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchHashtagServlet</servlet-name>
+    <url-pattern>/SearchHashtagServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewHashtagServlet</servlet-name>
+    <url-pattern>/ViewHashtagServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
